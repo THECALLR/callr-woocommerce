@@ -195,11 +195,15 @@ class Callr_Woocommerce_Admin {
 					$output[$key] = (isset($input[$key]) && !empty($input[$key])) ? 1 : 0;
 					break;
 				case 'number':
-					if (preg_match('/^\+[1-9][0-9]{5,14}$/', $input[$key])) {
-						$output[$key] = $input[$key];
-					} else {
-						$output[$key] = '';
-						if ($input[$key] != '') add_settings_error($key, $key . '-error', __('Invalid phone number.'), 'error');
+					$numbers = explode(',', $input[$key]);
+					$output[$key] = array();
+					foreach ($numbers as $number) {
+						$number = trim($number);
+						if (preg_match('/^\+[1-9][0-9]{5,14}$/', $number)) {
+							$output[$key][] = $number;
+						} else {
+							add_settings_error($key, $key . '-error', __('Invalid phone number.'), 'error');
+						}
 					}
 					break;
 				case 'sender':
@@ -272,20 +276,21 @@ class Callr_Woocommerce_Admin {
 	public function send_admin_notification($order_id) {
 		$settings = get_option($this->plugin_name);
 		if ($settings) {
-			if ($settings['admin-notification'] == 1 && $settings['admin-phone'] != '') {
+			if ($settings['admin-notification'] == 1 && !empty($settings['admin-phone'])) {
 				$order = wc_get_order($order_id);
 				$message = $this->token_replace($settings['admin-message'], $order);
-				return $this->send_sms(
-					$settings['admin-phone'],
-					$message,
-					$settings['callr-username'],
-					$settings['callr-password'],
-					$settings['callr-sender'],
-					$settings['callr-debug']
-				);
+				foreach ($settings['admin-phone'] as $number) {
+					$this->send_sms(
+						$number,
+						$message,
+						$settings['callr-username'],
+						$settings['callr-password'],
+						$settings['callr-sender'],
+						$settings['callr-debug']
+					);
+				}
 			}
 		}
-		return FALSE;
 	}
 
 	/**

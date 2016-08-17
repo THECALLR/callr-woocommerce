@@ -46,6 +46,7 @@
 				'callr-debug' => 0
 			);
 			$options = array_merge($options, get_option($this->plugin_name));
+			$options['admin-phone'] = implode(', ', $options['admin-phone']);
 			settings_fields($this->plugin_name);
 			do_settings_sections($this->plugin_name);
 		?>
@@ -68,7 +69,7 @@
 				<tr valign="top">
 					<th>
 						<label for="<?php echo $this->plugin_name; ?>-admin-phone"><?php _e('Admin phone number', $this->plugin_name); ?></label>
-						<span class="tip dashicons dashicons-editor-help" data-tip="<?php _e('Your mobile phone number in E.164 format. Example: +3384140055.', $this->plugin_name); ?>"></span>
+						<span class="tip dashicons dashicons-editor-help" data-tip="<?php _e('Your mobile phone number in E.164 format. Example: “+3384140055”. You can separate multiple numbers with commas. Example: “+16467890800, +33678912345”.', $this->plugin_name); ?>"></span>
 					</th>
 					<td>
 						<input id="<?php echo $this->plugin_name; ?>-admin-phone" name="<?php echo $this->plugin_name; ?>[admin-phone]" type="text" value="<?php print $options['admin-phone']; ?>" class="regular-text" />
