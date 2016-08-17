@@ -1,0 +1,29 @@
+.callr .form-table td p {
+	margin-bottom: 10px;
+}
+.callr .form-table td fieldset {
+	margin-top: 3px;
+}
+.callr label {
+	cursor: default;
+}
+.callr span.tip.dashicons.dashicons-editor-help {
+	float: right;
+	cursor: help;
+}
+.callr .spinner {
+	float: none;
+}
+.callr #sms-tester-result {
+	display: none;
+	font-size: 28px;
+}
+.callr #sms-tester-result.dashicons-yes {
+	color: #46b450;
+}
+.callr #sms-tester-result.dashicons-no {
+	color: #dc3232;
+}
+.callr .tipr_container_bottom {
+	max-width: 300px;
+}
