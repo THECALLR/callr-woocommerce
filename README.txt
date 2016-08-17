@@ -68,7 +68,9 @@ Email us at [support@callr.com](mailto:support@callr.com).
 
 == Screenshots ==
 
-Coming soon!
+![Optionally add an optin/optout checkbox on the checkout page.][assets/checkout.png]
+
+![Powerful and easy to use admin interface.][assets/admin.png]
 
 == Changelog ==
 
