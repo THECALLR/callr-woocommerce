@@ -47,7 +47,7 @@
 			);
 			$saved_options = get_option($this->plugin_name);
 			if (is_array($saved_options)) $options = array_merge($options, $saved_options);
-			$options['admin-phone'] = implode(', ', $options['admin-phone']);
+			if (is_array($options['admin-phone'])) $options['admin-phone'] = implode(', ', $options['admin-phone']);
 			settings_fields($this->plugin_name);
 			do_settings_sections($this->plugin_name);
 		?>
