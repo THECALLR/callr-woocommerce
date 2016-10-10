@@ -30,4 +30,4 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
 
-unregister_setting('callr-woocommerce', 'callr-woocommerce');
+delete_option('callr-woocommerce');
