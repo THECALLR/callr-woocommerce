@@ -22,10 +22,12 @@
  * @link       http://callr.com
  * @since      1.0.0
  *
- * @package    Callr_Woocommerce
+ * @package    Callr_WooCommerce
  */
 
 // If uninstall not called from WordPress, then exit.
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
+
+unregister_setting('callr-woocommerce', 'callr-woocommerce');
