@@ -6,8 +6,8 @@
  * @link       http://callr.com
  * @since      1.0.0
  *
- * @package    Callr_Woocommerce
- * @subpackage Callr_Woocommerce/admin
+ * @package    Callr_WooCommerce
+ * @subpackage Callr_WooCommerce/admin
  */
 
 /**
@@ -16,8 +16,8 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Callr_Woocommerce
- * @subpackage Callr_Woocommerce/admin
+ * @package    Callr_WooCommerce
+ * @subpackage Callr_WooCommerce/admin
  * @author     Callr <contact@callr.com>
  */
 class Callr_Woocommerce_Admin {
@@ -195,7 +195,11 @@ class Callr_Woocommerce_Admin {
 					$output[$key] = (isset($input[$key]) && !empty($input[$key])) ? 1 : 0;
 					break;
 				case 'number':
-					$numbers = explode(',', $input[$key]);
+					if (is_array($input[$key])) {
+						$numbers = $input[$key];
+					} else {
+						$numbers = explode(',', $input[$key]);
+					}
 					$output[$key] = array();
 					foreach ($numbers as $number) {
 						$number = trim($number);

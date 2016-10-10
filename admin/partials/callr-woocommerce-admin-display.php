@@ -8,8 +8,8 @@
  * @link       http://callr.com
  * @since      1.0.0
  *
- * @package    Callr_Woocommerce
- * @subpackage Callr_Woocommerce/admin/partials
+ * @package    Callr_WooCommerce
+ * @subpackage Callr_WooCommerce/admin/partials
  */
 ?>
 
