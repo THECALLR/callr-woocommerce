@@ -43,9 +43,10 @@
 				'callr-username' => '',
 				'callr-password' => '',
 				'callr-sender' => '',
-				'callr-debug' => 0
+				'callr-debug' => 1
 			);
-			$options = array_merge($options, get_option($this->plugin_name));
+			$saved_options = get_option($this->plugin_name);
+			if (is_array($saved_options)) $options = array_merge($options, $saved_options);
 			$options['admin-phone'] = implode(', ', $options['admin-phone']);
 			settings_fields($this->plugin_name);
 			do_settings_sections($this->plugin_name);

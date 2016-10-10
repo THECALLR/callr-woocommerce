@@ -1,6 +1,6 @@
 === Plugin Name ===
-Contributors: callr
-Donate link: http://callr.com
+Contributors: CALLR
+Donate link: https://github.com/THECALLR/callr-woocommerce
 Tags: sms, notification, woocommerce
 Requires at least: 4.0.1
 Tested up to: 4.6
@@ -8,7 +8,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Send SMS updates to customers when their order status is updated and receive an SMS message when a customer places a new order.
+Send SMS updates to customers when their order status is updated and receive an SMS message when a customer places a new order via WooCommerce.
 
 == Description ==
 
@@ -31,7 +31,7 @@ This plugin automatically send SMS updates to customers when their order status 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-= About Callr =
+= About CALLR =
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 

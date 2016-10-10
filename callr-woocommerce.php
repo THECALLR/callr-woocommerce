@@ -8,16 +8,16 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://callr.com
+ * @link              https://github.com/THECALLR/callr-woocommerce
  * @since             1.0.0
- * @package           Callr_Woocommerce
+ * @package           CALLR_WooCommerce
  *
  * @wordpress-plugin
- * Plugin Name:       SMS notifications for WooCommerce by Callr
- * Plugin URI:        http://callr.com
- * Description:       This plugin allows customers and admins to be notified by SMS when an order is created or updated.
+ * Plugin Name:       SMS notifications by CALLR
+ * Plugin URI:        https://github.com/THECALLR/callr-woocommerce
+ * Description:       This plugin allows customers and admins to be notified by SMS when an order is created or updated on their via WooCommerce.
  * Version:           1.0.0
- * Author:            Callr
+ * Author:            CALLR
  * Author URI:        http://callr.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
