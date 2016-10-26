@@ -1,6 +1,6 @@
 {
     "require": {
-        "giggsey/libphonenumber-for-php": "^7.5",
-        "callr/sdk-php": "dev-master"
+        "giggsey/libphonenumber-for-php": "^7.7",
+        "callr/sdk-php": "^0.9.1"
     }
 }

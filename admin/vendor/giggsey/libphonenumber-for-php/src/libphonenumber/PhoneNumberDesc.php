@@ -13,6 +13,89 @@ class PhoneNumberDesc
     protected $possibleNumberPattern = "";
     protected $hasExampleNumber = false;
     protected $exampleNumber = "";
+    /**
+     * @var array
+     */
+    protected $possibleLength;
+    /**
+     * @var array
+     */
+    protected $possibleLengthLocalOnly;
+
+    public function __construct()
+    {
+        $this->clear();
+    }
+
+    /**
+     * @return PhoneNumberDesc
+     */
+    public function clear()
+    {
+        $this->nationalNumberPattern = "";
+        $this->possibleNumberPattern = "";
+        $this->clearPossibleLength();
+        $this->clearPossibleLengthLocalOnly();
+        $this->exampleNumber = "";
+
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPossibleLength()
+    {
+        return $this->possibleLength;
+    }
+
+    /**
+     * @param array $possibleLength
+     */
+    public function setPossibleLength($possibleLength)
+    {
+        $this->possibleLength = $possibleLength;
+    }
+
+    public function addPossibleLength($possibleLength)
+    {
+        if (!in_array($possibleLength, $this->possibleLength)) {
+            $this->possibleLength[] = $possibleLength;
+        }
+    }
+
+    public function clearPossibleLength()
+    {
+        $this->possibleLength = array();
+    }
+
+    /**
+     * @return array
+     */
+    public function getPossibleLengthLocalOnly()
+    {
+        return $this->possibleLengthLocalOnly;
+    }
+
+    /**
+     * @param array $possibleLengthLocalOnly
+     */
+    public function setPossibleLengthLocalOnly($possibleLengthLocalOnly)
+    {
+        $this->possibleLengthLocalOnly = $possibleLengthLocalOnly;
+    }
+
+    public function addPossibleLengthLocalOnly($possibleLengthLocalOnly)
+    {
+        if (!in_array($possibleLengthLocalOnly, $this->possibleLengthLocalOnly)) {
+            $this->possibleLengthLocalOnly[] = $possibleLengthLocalOnly;
+        }
+    }
+
+    public function clearPossibleLengthLocalOnly()
+    {
+        $this->possibleLengthLocalOnly = array();
+    }
 
     /**
      * @return boolean
@@ -113,6 +196,8 @@ class PhoneNumberDesc
         if ($other->hasExampleNumber()) {
             $this->setExampleNumber($other->getExampleNumber());
         }
+        $this->setPossibleLength($other->getPossibleLength());
+        $this->setPossibleLengthLocalOnly($other->getPossibleLengthLocalOnly());
 
         return $this;
     }
@@ -144,6 +229,9 @@ class PhoneNumberDesc
             $data['ExampleNumber'] = $this->getExampleNumber();
         }
 
+        $data['PossibleLength'] = $this->getPossibleLength();
+        $data['PossibleLengthLocalOnly'] = $this->getPossibleLengthLocalOnly();
+
         return $data;
     }
 
@@ -162,6 +250,8 @@ class PhoneNumberDesc
         if (isset($input['ExampleNumber']) && $input['NationalNumberPattern'] != '') {
             $this->setExampleNumber($input['ExampleNumber']);
         }
+        $this->setPossibleLength($input['PossibleLength']);
+        $this->setPossibleLengthLocalOnly($input['PossibleLengthLocalOnly']);
 
         return $this;
     }

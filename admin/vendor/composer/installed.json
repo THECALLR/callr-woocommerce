@@ -1,18 +1,21 @@
 [
     {
         "name": "giggsey/locale",
-        "version": "1.0",
-        "version_normalized": "1.0.0.0",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/giggsey/Locale.git",
-            "reference": "9087acaf8493472fcd129118017fd7e06be3d8fa"
+            "reference": "8238764fa3f2c5bd8bdf981e2e019401d49229e3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/giggsey/Locale/zipball/9087acaf8493472fcd129118017fd7e06be3d8fa",
-            "reference": "9087acaf8493472fcd129118017fd7e06be3d8fa",
+            "url": "https://api.github.com/repos/giggsey/Locale/zipball/8238764fa3f2c5bd8bdf981e2e019401d49229e3",
+            "reference": "8238764fa3f2c5bd8bdf981e2e019401d49229e3",
             "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
         },
         "require-dev": {
             "pear/pear-core-minimal": "^1.9",
@@ -26,7 +29,7 @@
             "symfony/finder": "^2.8|^3.0",
             "symfony/process": "^2.8|^3.0"
         },
-        "time": "2016-08-04 23:02:29",
+        "time": "2016-10-24 20:49:55",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -49,17 +52,17 @@
     },
     {
         "name": "giggsey/libphonenumber-for-php",
-        "version": "7.5.1",
-        "version_normalized": "7.5.1.0",
+        "version": "7.7.2",
+        "version_normalized": "7.7.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-            "reference": "20d909ea174da1e866a0853f169d10b54e0199b5"
+            "reference": "245324b87d59fe122945f5cf4521c75af2bd472a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/20d909ea174da1e866a0853f169d10b54e0199b5",
-            "reference": "20d909ea174da1e866a0853f169d10b54e0199b5",
+            "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/245324b87d59fe122945f5cf4521c75af2bd472a",
+            "reference": "245324b87d59fe122945f5cf4521c75af2bd472a",
             "shasum": ""
         },
         "require": {
@@ -71,12 +74,12 @@
             "pear/pear-core-minimal": "^1.9",
             "pear/pear_exception": "^1.0",
             "pear/versioncontrol_git": "dev-master",
-            "phing/phing": "~2.7",
-            "phpunit/phpunit": "~4.0",
-            "satooshi/php-coveralls": "~0.6",
-            "symfony/console": "^2.5"
+            "phing/phing": "^2.7",
+            "phpunit/phpunit": "^4.8|^5.0",
+            "satooshi/php-coveralls": "^1.0",
+            "symfony/console": "^2.8|^3.0"
         },
-        "time": "2016-08-05 15:24:59",
+        "time": "2016-10-06 13:02:39",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -113,17 +116,17 @@
     },
     {
         "name": "callr/sdk-php",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "v0.9.1",
+        "version_normalized": "0.9.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/THECALLR/sdk-php.git",
-            "reference": "5796afe35c4ad970ec0ea686b26b822f29ebb5cb"
+            "reference": "ff263d153c82f8f4ce14ca301e365940ea63500f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/THECALLR/sdk-php/zipball/5796afe35c4ad970ec0ea686b26b822f29ebb5cb",
-            "reference": "5796afe35c4ad970ec0ea686b26b822f29ebb5cb",
+            "url": "https://api.github.com/repos/THECALLR/sdk-php/zipball/ff263d153c82f8f4ce14ca301e365940ea63500f",
+            "reference": "ff263d153c82f8f4ce14ca301e365940ea63500f",
             "shasum": ""
         },
         "require": {
@@ -131,9 +134,9 @@
             "ext-json": "*",
             "php": ">=5.4.0"
         },
-        "time": "2016-07-21 14:13:01",
+        "time": "2016-10-25 15:53:34",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "CALLR\\": "src/CALLR/"
