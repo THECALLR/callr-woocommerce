@@ -195,18 +195,20 @@ class Callr_Woocommerce_Admin {
 					$output[$key] = (isset($input[$key]) && !empty($input[$key])) ? 1 : 0;
 					break;
 				case 'number':
-					if (is_array($input[$key])) {
-						$numbers = $input[$key];
-					} else {
-						$numbers = explode(',', $input[$key]);
-					}
 					$output[$key] = array();
-					foreach ($numbers as $number) {
-						$number = trim($number);
-						if (preg_match('/^\+[1-9][0-9]{5,14}$/', $number)) {
-							$output[$key][] = $number;
+					if ($output['admin-notification'] == 1) {
+						if (is_array($input[$key])) {
+							$numbers = $input[$key];
 						} else {
-							add_settings_error($key, $key . '-error', __('Invalid phone number.'), 'error');
+							$numbers = explode(',', $input[$key]);
+						}
+						foreach ($numbers as $number) {
+							$number = trim($number);
+							if (preg_match('/^\+[1-9][0-9]{5,14}$/', $number)) {
+								$output[$key][] = $number;
+							} else {
+								add_settings_error($key, $key . '-error', __('Invalid phone number.'), 'error');
+							}
 						}
 					}
 					break;
