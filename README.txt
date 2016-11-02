@@ -1,4 +1,5 @@
-=== Plugin Name ===
+=== Callr for WooCommerce ===
+
 Contributors: CALLR
 Donate link: https://github.com/THECALLR/callr-woocommerce
 Tags: sms, notification, woocommerce
