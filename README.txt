@@ -28,13 +28,13 @@ This plugin automatically send SMS updates to customers when their order status 
 * Send test SMS directly from the setting page.
 * Easy to use, full setup only takes a few minutes.
 
-= Why offer SMS Order Updates? =
+= Why send SMS Order Updates to your customers? =
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Informing your customers is the first step towards making them happy. The long wait between the online order and the moment when the customer unwraps the package is a cause of anxiety, tension and frustration you want to limit, or hope and excitement that you want to benefit from as a company. Sending SMS updates (rather than email or even no updates at all) is the perfect way to make sure your customers notified instantly and remain happy customers.
 
 = About CALLR =
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+CALLR is a cloud communications platform-as-a-service that offers high-end voice and messaging capabilities that lead the way to smarter automated relations between businesses and their customers.
 
 == Installation ==
 
@@ -47,7 +47,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 = Where can I get an account? =
 
-Head to [http://callr.com](http://callr.com).
+Head to [https://www.callr.com](https://www.callr.com).
 
 = What is the E.164 format? =
 
